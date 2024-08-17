@@ -1,0 +1,17 @@
+:host {
+    .p-menu {
+        background-color: var(--primary-clr);
+        border: solid 1px var(--border-clr);
+    }
+    .p-element.p-menuitem.p-focus {
+        .p-menuitem-content {
+            background-color: var(--text-clr);
+        }
+        .p-menuitem-text {
+            color: var(--primary-clr);
+        }
+    }
+    .p-menuitem-text {
+        color: var(--text-clr);
+    }
+}

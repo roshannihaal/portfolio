@@ -1,0 +1,64 @@
+<div class="h-full w-full">
+    <div class="h-full md:flex items-center justify-center">
+        <p-timeline [value]="educations" class="hidden md:flex w-full" align="alternate">
+            <ng-template pTemplate="content" let-education>
+                <p-card
+                    [header]="education.type"
+                    [subheader]="education.name"
+                    [style]="{ cursor: 'pointer' }">
+                    <div class="">
+                        <div class="pb-2">
+                            {{ education.major }}
+                        </div>
+                        <hr *ngIf="education.major" class="linebreak" />
+                        <div class="py-2">
+                            {{ education.metric }} :
+                            {{ education.value }}
+                        </div>
+                        <hr class="linebreak" />
+                        <div class="py-2">{{ education.start }} - {{ education.end }}</div>
+                        <hr class="linebreak" *ngIf="education.skills.length" />
+                        <div *ngIf="education.skills.length" class="pt-2 flex gap-x-2 flex-wrap">
+                            <ng-container *ngFor="let skill of education.skills">
+                                <p-chip
+                                    [label]="skill"
+                                    class="p-1"
+                                    [style]="{ color: 'var(--primary-clr)' }"></p-chip
+                            ></ng-container>
+                        </div>
+                    </div>
+                </p-card>
+            </ng-template>
+        </p-timeline>
+        <div class="md:hidden" *ngFor="let education of educations">
+            <div class="py-2">
+                <p-card
+                    [header]="education.type"
+                    [subheader]="education.name"
+                    [style]="{ cursor: 'pointer' }">
+                    <div class="">
+                        <div class="pb-2">
+                            {{ education.major }}
+                        </div>
+                        <hr *ngIf="education.major" class="linebreak" />
+                        <div class="py-2">
+                            {{ education.metric }} :
+                            {{ education.value }}
+                        </div>
+                        <hr class="linebreak" />
+                        <div class="py-2">{{ education.start }} - {{ education.end }}</div>
+                        <hr class="linebreak" *ngIf="education.skills.length" />
+                        <div *ngIf="education.skills.length" class="pt-2 flex gap-x-2 flex-wrap">
+                            <ng-container *ngFor="let skill of education.skills">
+                                <p-chip
+                                    [label]="skill"
+                                    class="p-1"
+                                    [style]="{ color: 'var(--primary-clr)' }"></p-chip
+                            ></ng-container>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </div>
+</div>

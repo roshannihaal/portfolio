@@ -1,0 +1,21 @@
+:host ::ng-deep .p-card-body {
+    background-color: var(--primary-clr);
+    color: var(--text-clr);
+    border: 2px solid var(--border-clr);
+}
+
+.linebreak {
+    border-color: var(--border-clr);
+}
+
+:host ::ng-deep .p-timeline-event-marker {
+    border-radius: 0;
+    transform: rotate(45deg);
+    background-color: var(--border-clr);
+}
+
+:host ::ng-deep .p-timeline .p-timeline-event-connector {
+    background-color: var(--border-clr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

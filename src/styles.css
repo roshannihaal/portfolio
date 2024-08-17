@@ -9,7 +9,7 @@
     --font-md: 1.5rem;
     --font-lg: 1.75rem;
     --font-xl: 2rem;
-    --font-vb: 5rem;
+    --font-vb: 3rem;
 
     --font-weight-light: 300;
     --font-weight-normal: 400;
@@ -25,6 +25,11 @@
 @font-face {
     font-family: 'Poppins';
     src: url('./assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
 }
 
 body {

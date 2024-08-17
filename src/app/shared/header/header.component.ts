@@ -29,27 +29,27 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Skills',
                 icon: faTerminal,
-                route: '/skills',
+                route: '/',
             },
             {
                 label: 'Projects',
                 icon: faProjectDiagram,
-                route: '/skills',
+                route: '/',
             },
             {
                 label: 'Experience',
                 icon: faLinesLeaning,
-                route: '/skills',
+                route: '/',
             },
             {
                 label: 'Education',
                 icon: faGraduationCap,
-                route: '/skills',
+                route: '/',
             },
             {
                 label: 'Resume',
                 icon: faSheetPlastic,
-                route: '/skills',
+                route: '/',
             },
         ];
     }

@@ -16,6 +16,22 @@
                 </div>
             </div>
         </div>
-        <div class="w-4/12"></div>
+        <div class="flex justify-center w-4/12">
+            <div class="w-1/2">
+                <p-carousel
+                    [value]="skills"
+                    [numVisible]="1"
+                    [numScroll]="1"
+                    [circular]="false"
+                    [circular]="true"
+                    autoplayInterval="1500">
+                    <ng-template let-skill pTemplate="item">
+                        <div class="w-full flex justify-center">
+                            <img [src]="skill.image" alt="skill.name" width="200" />
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        </div>
     </div>
 </div>

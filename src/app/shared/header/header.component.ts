@@ -1,19 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {
     faCode,
-    faReceipt,
-    faUmbrella,
     faGraduationCap,
-    faBullhorn,
     faLinesLeaning,
     faSheetPlastic,
-    faProcedures,
     faProjectDiagram,
-    faGaugeHigh,
-    faSkull,
-    faSkiing,
-    faPersonSkating,
-    faContactBook,
     faTerminal,
 } from '@fortawesome/free-solid-svg-icons';
 import { IHeaderElement } from '../interface';

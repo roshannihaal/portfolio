@@ -1,6 +1,6 @@
 <div class="h-full w-full">
     <div class="flex p-4 justify-between md:justify-around">
-        <div class="flex gap-x-2 cursor-pointer">
+        <div class="flex gap-x-2 cursor-pointer" (click)="onNavigate(details)">
             <div class="">
                 <fa-icon [icon]="details.icon"></fa-icon>
             </div>
@@ -10,7 +10,7 @@
         </div>
         <div class="hidden md:flex gap-x-8">
             <ng-container *ngFor="let module of modules">
-                <div class="flex gap-x-2 cursor-pointer">
+                <div class="flex gap-x-2 cursor-pointer" (click)="onNavigate(module)">
                     <div class="">
                         <fa-icon [icon]="module.icon"></fa-icon>
                     </div>
@@ -20,7 +20,18 @@
         </div>
         <div class="md:hidden">
             <button pButton type="button" (click)="menu.toggle($event)" icon="pi pi-bars"></button>
-            <p-menu #menu [model]="modules" [popup]="true"></p-menu>
+            <p-menu #menu [model]="modules" [popup]="true">
+                <ng-template pTemplate="module" let-module>
+                    <div
+                        class="p-menuitem-link flex gap-x-2 cursor-pointer"
+                        (click)="onNavigate(module)">
+                        <div class="">
+                            <fa-icon [icon]="module.icon"></fa-icon>
+                        </div>
+                        <div class="">{{ module.label }}</div>
+                    </div>
+                </ng-template>
+            </p-menu>
         </div>
     </div>
 </div>

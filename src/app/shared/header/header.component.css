@@ -1,17 +1,12 @@
-:host {
-    .p-menu {
-        background-color: var(--primary-clr);
-        border: solid 1px var(--border-clr);
-    }
-    .p-element.p-menuitem.p-focus {
-        .p-menuitem-content {
-            background-color: var(--text-clr);
-        }
-        .p-menuitem-text {
-            color: var(--primary-clr);
-        }
-    }
-    .p-menuitem-text {
-        color: var(--text-clr);
-    }
+:host ::ng-deep .p-menu {
+    background: var(--primary-clr);
+    border: 1px solid var(--border-clr);
+}
+
+:host ::ng-deep .p-menu .p-menu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+    color: var(--text-clr);
+}
+
+:host ::ng-deep .p-menu .p-menu-list .p-menuitem.p-focus .p-menuitem-content .p-menuitem-link {
+    color: var(--primary-clr);
 }

@@ -8,6 +8,7 @@ import {
     faTerminal,
 } from '@fortawesome/free-solid-svg-icons';
 import { IHeaderElement } from '../interface';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
@@ -19,11 +20,13 @@ export class HeaderComponent implements OnInit {
 
     modules: IHeaderElement[];
 
+    constructor(private router: Router) {}
+
     ngOnInit(): void {
         this.details = {
             label: 'Roshan Nihaal Jahangeer',
             icon: faCode,
-            route: '',
+            route: '/',
         };
         this.modules = [
             {
@@ -44,7 +47,7 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Education',
                 icon: faGraduationCap,
-                route: '/',
+                route: '/education',
             },
             {
                 label: 'Resume',
@@ -52,5 +55,9 @@ export class HeaderComponent implements OnInit {
                 route: '/',
             },
         ];
+    }
+
+    onNavigate(element: IHeaderElement): void {
+        this.router.navigate([element.route]);
     }
 }

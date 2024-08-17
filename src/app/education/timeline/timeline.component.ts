@@ -19,7 +19,7 @@ export class TimelineComponent implements OnInit {
                 start: '2018',
                 end: '2022',
                 metric: 'CGPA',
-                value: '7.92',
+                value: '7.93',
                 skills: [
                     'C',
                     'C++',

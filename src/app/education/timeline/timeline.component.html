@@ -2,10 +2,7 @@
     <div class="h-full md:flex items-center justify-center">
         <p-timeline [value]="educations" class="hidden md:flex w-full" align="alternate">
             <ng-template pTemplate="content" let-education>
-                <p-card
-                    [header]="education.type"
-                    [subheader]="education.name"
-                    [style]="{ cursor: 'pointer' }">
+                <p-card [header]="education.type" [subheader]="education.name">
                     <div class="">
                         <div class="pb-2">
                             {{ education.major }}

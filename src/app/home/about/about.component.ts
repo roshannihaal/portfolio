@@ -20,6 +20,7 @@ export class AboutComponent implements OnInit {
             { name: 'Docker', image: '../assets/images/docker.png' },
             { name: 'MongoDB', image: '../assets/images/mongodb.png' },
             { name: 'PostgreSQL', image: '../assets/images/postgresql.png' },
+            { name: 'Python', image: '../assets/images/python.png' },
             { name: 'Apache Kafka', image: '../assets/images/kafka.png' },
             { name: 'HTML', image: '../assets/images/html.png' },
             { name: 'CSS', image: '../assets/images/css.png' },

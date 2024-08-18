@@ -1,0 +1,78 @@
+<div class="h-full w-full">
+    <div class="text-center title md:text-5xl write-heading">Skills</div>
+    <div
+        class="mt-2 flex flex-col md:flex-grow md:justify-between md:items-center md:gap-y-8 gap-y-6 write-heading skill-wrap">
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Programming Languages
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let programmingLanguage of programmingLanguages">
+                    <app-card [skill]="programmingLanguage"></app-card>
+                </ng-container>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Backend Technologies
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let backendTechnology of backendTechnologies">
+                    <app-card [skill]="backendTechnology"></app-card>
+                </ng-container>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Databases
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let database of databases">
+                    <app-card [skill]="database"></app-card>
+                </ng-container>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Devops
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let dev of devops">
+                    <app-card [skill]="dev"></app-card>
+                </ng-container>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Frameworks
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let framework of frameworks">
+                    <app-card [skill]="framework"></app-card>
+                </ng-container>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 md:w-3/4 w-full">
+            <div class="flex items-center gap-x-2 justify-center">
+                <hr class="hidden md:block linebreak-small" />
+                Markup & Styles
+                <hr class="hidden md:block linebreak" />
+            </div>
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                <ng-container *ngFor="let mns of markupAndStyles">
+                    <app-card [skill]="mns"></app-card>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

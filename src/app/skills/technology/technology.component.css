@@ -1,0 +1,16 @@
+.linebreak-small {
+    width: 2rem;
+}
+
+.linebreak {
+    flex-grow: 1;
+}
+
+.linebreak,
+.linebreak-small {
+    border-color: var(--secondary-clr);
+}
+
+.skill-wrap {
+    color: var(--secondary-clr);
+}

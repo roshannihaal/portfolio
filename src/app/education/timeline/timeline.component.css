@@ -2,6 +2,7 @@
     background-color: var(--primary-clr);
     color: var(--text-clr);
     border: 2px solid var(--border-clr);
+    padding: 0.5rem;
 }
 
 .linebreak {

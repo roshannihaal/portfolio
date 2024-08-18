@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Skills',
                 icon: faTerminal,
-                route: '/',
+                route: '/skills',
             },
             {
                 label: 'Projects',

@@ -1,0 +1,16 @@
+.card-wrap {
+    border: 1px solid var(--secondary-clr);
+    border-radius: 15px;
+    color: var(--text-clr);
+    height: 4.25rem;
+}
+
+.skill-image {
+    mask-image: linear-gradient(to right, transparent, black); /* Fade from left to right */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black
+    ); /* For WebKit-based browsers */
+    transition: opacity 0.3s ease;
+}

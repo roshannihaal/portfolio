@@ -10,3 +10,17 @@
 :host ::ng-deep .p-menu .p-menu-list .p-menuitem.p-focus .p-menuitem-content .p-menuitem-link {
     color: var(--primary-clr);
 }
+
+.blinking-icon {
+    animation: blink-animation 1.5s infinite;
+}
+
+@keyframes blink-animation {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

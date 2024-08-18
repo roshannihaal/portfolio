@@ -2,7 +2,7 @@
     <div class="flex p-4 justify-between md:justify-around">
         <div class="flex gap-x-2 cursor-pointer" (click)="onNavigate(details)">
             <div class="">
-                <fa-icon [icon]="details.icon"></fa-icon>
+                <fa-icon [icon]="details.icon" class="blinking-icon"></fa-icon>
             </div>
             <div class="">
                 {{ details.label }}

@@ -8,7 +8,7 @@
                 Programming Languages
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let programmingLanguage of programmingLanguages">
                     <app-card [skill]="programmingLanguage"></app-card>
                 </ng-container>
@@ -20,7 +20,7 @@
                 Backend Technologies
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let backendTechnology of backendTechnologies">
                     <app-card [skill]="backendTechnology"></app-card>
                 </ng-container>
@@ -32,7 +32,7 @@
                 Databases
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let database of databases">
                     <app-card [skill]="database"></app-card>
                 </ng-container>
@@ -44,7 +44,7 @@
                 Devops
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let dev of devops">
                     <app-card [skill]="dev"></app-card>
                 </ng-container>
@@ -56,7 +56,7 @@
                 Frameworks
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let framework of frameworks">
                     <app-card [skill]="framework"></app-card>
                 </ng-container>
@@ -68,7 +68,7 @@
                 Markup & Styles
                 <hr class="hidden md:block linebreak" />
             </div>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap flex-col md:flex-row gap-4">
                 <ng-container *ngFor="let mns of markupAndStyles">
                     <app-card [skill]="mns"></app-card>
                 </ng-container>

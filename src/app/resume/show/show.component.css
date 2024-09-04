@@ -1,0 +1,14 @@
+.pdf-base {
+    background-color: var(--secondary-clr);
+    border-color: var(--border-clr);
+}
+
+.base-btn {
+    background-color: var(--primary-clr);
+    border-color: var(--border-clr);
+}
+
+.resume-img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}

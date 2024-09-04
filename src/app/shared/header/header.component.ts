@@ -52,7 +52,7 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Resume',
                 icon: faSheetPlastic,
-                route: '/',
+                route: '/resume',
             },
         ];
     }

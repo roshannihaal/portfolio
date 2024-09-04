@@ -8,9 +8,17 @@ import { ButtonModule } from 'primeng/button';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
+
 @NgModule({
     declarations: [HeaderComponent],
     imports: [CommonModule, FontAwesomeModule, MenuModule, ButtonModule],
-    exports: [HeaderComponent, CarouselModule, TimelineModule, CardModule, ChipModule],
+    exports: [
+        HeaderComponent,
+        CarouselModule,
+        TimelineModule,
+        CardModule,
+        ChipModule,
+        ButtonModule,
+    ],
 })
 export class SharedModule {}

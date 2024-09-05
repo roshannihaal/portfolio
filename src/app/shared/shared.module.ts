@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
     declarations: [HeaderComponent],
@@ -19,6 +20,7 @@ import { ChipModule } from 'primeng/chip';
         CardModule,
         ChipModule,
         ButtonModule,
+        ProgressBarModule,
     ],
 })
 export class SharedModule {}

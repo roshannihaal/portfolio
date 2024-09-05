@@ -61,7 +61,7 @@ export class ShowComponent implements AfterViewInit, OnInit {
     }
 
     onDownload() {
-        const resumePath = '../assets/resume/resume.pdf';
+        const resumePath = '../assets/resume/ROSHAN_RESUME.pdf';
         const resumeName = 'ROSHAN_RESUME.pdf';
         saveAs(resumePath, resumeName);
     }

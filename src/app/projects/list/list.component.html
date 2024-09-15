@@ -1,0 +1,50 @@
+<div class="w-full h-full">
+    <div class="grid lg:grid-cols-2 gap-4">
+        <ng-container class="" *ngFor="let project of projects">
+            <div class="h-full">
+                <p-card [header]="project.title" [subheader]="project.service">
+                    <div class="">
+                        <div class="pb-2">
+                            {{ project.description }}
+                        </div>
+                        <div
+                            class="pt-2"
+                            *ngIf="project.remarks"
+                            [style.color]="project.remarks.color">
+                            <i class="{{ project.remarks.icon }}"></i>
+                            {{ project.remarks.content }}
+                        </div>
+                        <div class="py-2 flex gap-x-2 flex-wrap">
+                            <ng-container *ngFor="let techstack of project.techstack">
+                                <p-chip
+                                    [label]="techstack"
+                                    class="p-1"
+                                    [style]="{ color: 'var(--primary-clr)' }"></p-chip
+                            ></ng-container>
+                        </div>
+                        <hr class="linebreak" />
+                        <div class="py-2">
+                            <div class="pb-2 flex gap-x-2">
+                                <div class="">
+                                    <img src="../../../assets/images/github.png" width="20" />
+                                </div>
+                                <div class="">Repositories</div>
+                            </div>
+                            <div class="">
+                                <ng-container *ngFor="let obj of project.git">
+                                    <ng-container *ngFor="let repository of obj | keyvalue">
+                                        <div class="">
+                                            <a href="{{ repository.value }}" target="_blank">
+                                                {{ repository.key }}
+                                            </a>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </ng-container>
+    </div>
+</div>

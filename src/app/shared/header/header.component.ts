@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Projects',
                 icon: faProjectDiagram,
-                route: '/',
+                route: '/projects',
             },
             {
                 label: 'Experience',

@@ -1,0 +1,39 @@
+:host ::ng-deep .p-card .p-card-body {
+    background-color: var(--primary-clr);
+    color: var(--text-clr);
+    border: 2px solid var(--border-clr);
+    padding: 0.5rem;
+}
+
+:host ::ng-deep .p-card {
+    display: flex;
+    height: 100%;
+}
+
+.linebreak {
+    border-color: var(--border-clr);
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+    color: #4caf50; /* Green */
+}
+
+/* visited link */
+a:visited {
+    color: #8e24aa; /* Deep Purple */
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff9800; /* Amber */
+}
+
+/* selected link */
+a:active {
+    color: #f44336; /* Red */
+}

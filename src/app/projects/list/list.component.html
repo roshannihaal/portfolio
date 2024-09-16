@@ -3,7 +3,7 @@
         <ng-container class="" *ngFor="let project of projects">
             <div class="h-full">
                 <p-card [header]="project.title" [subheader]="project.service">
-                    <div class="">
+                    <div class="h-full flex flex-col justify-between">
                         <div class="pb-2">
                             {{ project.description }}
                         </div>

@@ -12,17 +12,6 @@ export class ListComponent implements OnInit {
     ngOnInit(): void {
         this.projects = [
             {
-                title: 'Synchrona',
-                service: 'Time Progress Tracker',
-                description:
-                    'An interactive tool that calculates and displays the real-time progression of various time units, including minute, hour, month, and year. Users can select a time unit to view the percentage of the current period that has passed. This project provides a clear, easy-to-understand display of time progression.',
-                techstack: ['Angular', 'Nodejs', 'Docker'],
-                git: [
-                    { sycnhrona_frontend: 'https://github.com/roshannihaal/synchrona_frontend' },
-                    { sycnhrona_backend: 'https://github.com/roshannihaal/synchrona_backend' },
-                ],
-            },
-            {
                 title: 'Secure OTP',
                 service: 'OTP Authentication System',
                 description:
@@ -49,7 +38,18 @@ export class ListComponent implements OnInit {
                 },
             },
             {
-                title: 'Porfolio',
+                title: 'Synchrona',
+                service: 'Time Progress Tracker',
+                description:
+                    'An interactive tool that calculates and displays the real-time progression of various time units, including minute, hour, month, and year. Users can select a time unit to view the percentage of the current period that has passed. This project provides a clear, easy-to-understand display of time progression.',
+                techstack: ['Angular', 'Nodejs', 'Docker'],
+                git: [
+                    { sycnhrona_frontend: 'https://github.com/roshannihaal/synchrona_frontend' },
+                    { sycnhrona_backend: 'https://github.com/roshannihaal/synchrona_backend' },
+                ],
+            },
+            {
+                title: 'Portfolio',
                 service: 'Professional Portfolio',
                 description: `You're currently navigating through my professional portfolio—how convenient! 🎉 Here, you’ll uncover a detailed snapshot of my skills, experience, and education. As you explore, you'll get to know a bit more about me, my technical expertise, and my career path.`,
                 techstack: ['Angular'],

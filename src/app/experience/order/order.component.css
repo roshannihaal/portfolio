@@ -1,0 +1,28 @@
+:host ::ng-deep {
+    .p-element .p-card .p-card-body {
+        background-color: var(--primary-clr);
+        color: var(--text-clr);
+        border: 2px solid var(--border-clr);
+        padding: 0.5rem;
+    }
+    .p-card-body {
+        width: 100%;
+    }
+    .p-timeline-event-marker {
+        border-radius: 0;
+        transform: rotate(45deg);
+        background-color: var(--border-clr);
+    }
+    .p-timeline .p-timeline-event-connector {
+        background-color: var(--border-clr);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .p-timeline .p-timeline-event-opposite {
+        display: none;
+    }
+}
+
+:host ::ng-deep .duration {
+    color: var(--secondary-clr);
+}

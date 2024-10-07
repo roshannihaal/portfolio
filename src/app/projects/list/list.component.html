@@ -1,5 +1,6 @@
-<div class="w-full h-full">
-    <div class="grid lg:grid-cols-2 gap-4">
+<div class="w-full h-full overflow-y-auto">
+    <div class="text-center title md:text-5xl write-heading">Projects</div>
+    <div class="mt-2 grid lg:grid-cols-2 gap-4">
         <ng-container class="" *ngFor="let project of projects">
             <div class="h-full">
                 <p-card [header]="project.title" [subheader]="project.service">

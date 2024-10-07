@@ -20,7 +20,7 @@
     --primary-clr: #000000;
     --text-clr: #ffffff;
     --border-clr: #1d1d1d;
-    --secondary-clr: #3b3b3b;
+    --secondary-clr: #6c757d;
 }
 
 @font-face {
@@ -72,4 +72,24 @@ body {
 
 .write-heading {
     font-family: 'poppins-bold';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--primary-clr);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-clr);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-clr);
 }

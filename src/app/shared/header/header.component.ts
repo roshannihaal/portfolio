@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
             {
                 label: 'Experience',
                 icon: faLinesLeaning,
-                route: '/',
+                route: '/experience',
             },
             {
                 label: 'Education',

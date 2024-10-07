@@ -1,3 +1,17 @@
 .header-wrap {
     border-bottom: 1px solid var(--border-clr);
+    height: 6vh;
+}
+
+.content-wrap {
+    height: 94vh;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-wrap {
+        height: 9vh;
+    }
+    .content-wrap {
+        height: 91vh;
+    }
 }

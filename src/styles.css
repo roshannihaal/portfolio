@@ -76,7 +76,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
 /* Track */
@@ -92,4 +92,11 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--border-clr);
+}
+
+@media (min-width: 768px) {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
 }

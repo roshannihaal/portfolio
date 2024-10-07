@@ -1,0 +1,26 @@
+<div class="w-full h-full">
+    <div class="text-center title md:text-5xl write-heading">Experience</div>
+    <div class="mt-2 flex justify-center">
+        <div class="w-full grid gap-4">
+            <ng-container *ngFor="let item of list">
+                <p-card [header]="item.company" [subheader]="item.location">
+                    <div class="ml-2">
+                        <p-timeline [value]="item.titles">
+                            <ng-template pTemplate="content" let-title>
+                                <div class="">{{ title.name }}</div>
+                                <div class="ml-2 duration">
+                                    {{ title.startDate | date: 'MMM dd, yyyy' }} -
+                                    {{
+                                        title.endDate
+                                            ? (title.endDate | date: 'MMM dd, yyyy')
+                                            : 'Present'
+                                    }}
+                                </div>
+                            </ng-template>
+                        </p-timeline>
+                    </div>
+                </p-card>
+            </ng-container>
+        </div>
+    </div>
+</div>

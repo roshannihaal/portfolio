@@ -3,3 +3,4 @@ export { ISkills } from './iskills';
 export { ISocialMedia } from './isocial-media';
 export { IEducation } from './ieducation';
 export { IProject } from './iproject';
+export { IExperience } from './iexperience';

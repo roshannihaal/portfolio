@@ -54,11 +54,6 @@ export class ListComponent implements OnInit {
                 description: `You're currently navigating through my professional portfolio—how convenient! 🎉 Here, you’ll uncover a detailed snapshot of my skills, experience, and education. As you explore, you'll get to know a bit more about me, my technical expertise, and my career path.`,
                 techstack: ['Angular'],
                 git: [{ portfolio: 'https://github.com/roshannihaal/portfolio' }],
-                remarks: {
-                    icon: 'pi pi-exclamation-triangle',
-                    content: 'This project is under development.',
-                    color: '#ff6700',
-                },
             },
         ];
     }

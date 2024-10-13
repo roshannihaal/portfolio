@@ -59,5 +59,6 @@ export class HeaderComponent implements OnInit {
 
     onNavigate(element: IHeaderElement): void {
         this.router.navigate([element.route]);
+        window.scrollTo({ top: 0, behavior: 'auto' });
     }
 }

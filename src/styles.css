@@ -101,3 +101,16 @@ body {
         width: 5px;
     }
 }
+
+.p-menu {
+    background: var(--primary-clr);
+    border: 1px solid var(--border-clr);
+}
+
+.p-menu .p-menu-list .p-menuitem .p-menuitem-content .p-menuitem-link {
+    color: var(--text-clr);
+}
+
+.p-menu .p-menu-list .p-menuitem.p-focus .p-menuitem-content .p-menuitem-link {
+    color: var(--primary-clr);
+}

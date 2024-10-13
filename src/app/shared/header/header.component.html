@@ -20,7 +20,7 @@
         </div>
         <div class="md:hidden">
             <button pButton type="button" (click)="menu.toggle($event)" icon="pi pi-bars"></button>
-            <p-menu #menu [model]="modules" [popup]="true">
+            <p-menu #menu [model]="modules" [popup]="true" appendTo="body">
                 <ng-template pTemplate="module" let-module>
                     <div
                         class="p-menuitem-link flex gap-x-2 cursor-pointer"

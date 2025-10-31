@@ -22,21 +22,21 @@ export class ListComponent implements OnInit {
                     { secure_otp_backend: 'https://github.com/roshannihaal/secure_otp_backend' },
                 ],
             },
-            {
-                title: 'Flavor',
-                service: 'Online Food Ordering Platform',
-                description: `A secure and feature-rich platform for seamless online food ordering. Users can register, log in with two-factor authentication (2FA), browse menus, place orders, and make payments through a secure gateway. Restaurant owners can create accounts, add their restaurants, and manage their menus. The platform includes a dedicated admin console for overseeing and managing the system’s operations efficiently.`,
-                techstack: ['Angular', 'Nodejs', 'PostreSQL', 'Redis', 'Docker'],
-                git: [
-                    { flavor_frontend: 'https://github.com/roshannihaal/flavor_frontend' },
-                    { flavor_backend: 'https://github.com/roshannihaal/flavor_backend' },
-                ],
-                remarks: {
-                    icon: 'pi pi-exclamation-triangle',
-                    content: 'This project is under development.',
-                    color: '#ff6700',
-                },
-            },
+            // {
+            //     title: 'Flavor',
+            //     service: 'Online Food Ordering Platform',
+            //     description: `A secure and feature-rich platform for seamless online food ordering. Users can register, log in with two-factor authentication (2FA), browse menus, place orders, and make payments through a secure gateway. Restaurant owners can create accounts, add their restaurants, and manage their menus. The platform includes a dedicated admin console for overseeing and managing the system’s operations efficiently.`,
+            //     techstack: ['Angular', 'Nodejs', 'PostreSQL', 'Redis', 'Docker'],
+            //     git: [
+            //         { flavor_frontend: 'https://github.com/roshannihaal/flavor_frontend' },
+            //         { flavor_backend: 'https://github.com/roshannihaal/flavor_backend' },
+            //     ],
+            //     remarks: {
+            //         icon: 'pi pi-exclamation-triangle',
+            //         content: 'This project is under development.',
+            //         color: '#ff6700',
+            //     },
+            // },
             {
                 title: 'Synchrona',
                 service: 'Time Progress Tracker',

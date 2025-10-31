@@ -30,7 +30,10 @@ export class TechnologyComponent implements OnInit {
             { name: 'CSS', image: '../assets/images/css.png' },
             { name: 'SASS', image: '../assets/images/sass.png' },
         ];
-        this.devops = [{ name: 'Docker', image: '../assets/images/docker.png' }];
+        this.devops = [
+            { name: 'Docker', image: '../assets/images/docker.png' },
+            { name: 'Nginx', image: '../assets/images/nginx.png' },
+        ];
         this.frameworks = [{ name: 'Angular', image: '../assets/images/angular.png' }];
         this.backendTechnologies = [
             { name: 'Nodejs', image: '../assets/images/nodejs.png' },

@@ -25,6 +25,7 @@ export class AboutComponent implements OnInit {
             { name: 'HTML', image: '../assets/images/html.png' },
             { name: 'CSS', image: '../assets/images/css.png' },
             { name: 'SASS', image: '../assets/images/sass.png' },
+            { name: 'Nginx', image: '../assets/images/nginx.png' },
         ];
 
         this.socialMedia = [
@@ -38,11 +39,11 @@ export class AboutComponent implements OnInit {
                 image: '../assets/images/linkedin.png',
                 url: 'https://www.linkedin.com/in/roshan-nihaal-0196571b6',
             },
-            {
-                name: 'LeetCode',
-                image: '../assets/images/leetcode.png',
-                url: 'https://leetcode.com/roshan_nihaal',
-            },
+            // {
+            //     name: 'LeetCode',
+            //     image: '../assets/images/leetcode.png',
+            //     url: 'https://leetcode.com/roshan_nihaal',
+            // },
         ];
     }
 

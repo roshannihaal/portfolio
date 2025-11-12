@@ -29,9 +29,9 @@ export class ShowComponent implements AfterViewInit, OnInit {
         this.loadingProgress = 4;
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         if (timeZone === 'Asia/Kolkata' || timeZone === 'Asia/Calcutta') {
-            this.resumeName = 'ROSHAN_RESUME_IN';
+            this.resumeName = 'ROSHAN_NIHAAL_FULLSTACK_DEVELOPER_RESUME';
         } else {
-            this.resumeName = 'ROSHAN_RESUME';
+            this.resumeName = 'ROSHAN_NIHAAL_SOFTWARE_DEVELOPER_RESUME';
         }
     }
     ngAfterViewInit(): void {

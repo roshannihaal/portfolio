@@ -28,11 +28,12 @@ export class ShowComponent implements AfterViewInit, OnInit {
     ngOnInit(): void {
         this.loadingProgress = 4;
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        if (timeZone === 'Asia/Kolkata' || timeZone === 'Asia/Calcutta') {
-            this.resumeName = 'ROSHAN_NIHAAL_FULLSTACK_DEVELOPER_RESUME';
-        } else {
-            this.resumeName = 'ROSHAN_NIHAAL_SOFTWARE_DEVELOPER_RESUME';
-        }
+        // if (timeZone === 'Asia/Kolkata' || timeZone === 'Asia/Calcutta') {
+        //     this.resumeName = 'ROSHAN_NIHAAL_FULLSTACK_DEVELOPER_RESUME';
+        // } else {
+        //     this.resumeName = 'ROSHAN_NIHAAL_SOFTWARE_DEVELOPER_RESUME';
+        // }
+        this.resumeName = 'ROSHAN_NIHAAL_RESUME';
     }
     ngAfterViewInit(): void {
         this.setPDFWidth();
@@ -70,7 +71,7 @@ export class ShowComponent implements AfterViewInit, OnInit {
 
     onDownload() {
         const resumePath = `../assets/resume/${this.resumeName}.pdf`;
-        const resumeName = 'ROSHAN_RESUME.pdf';
+        const resumeName = 'ROSHAN_NIHAAL_RESUME.pdf';
         saveAs(resumePath, resumeName);
     }
 }
